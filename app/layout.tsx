@@ -18,10 +18,6 @@ export const metadata: Metadata = {
   title: "Vincent Mukuna | Web, Mobile & AI Product Developer",
   description:
     "Selected web, mobile, SaaS and AI product work by Vincent Mukuna, a full-stack product developer based in Nairobi.",
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-  },
   openGraph: {
     title: "Web, mobile, and AI products built with care.",
     description:

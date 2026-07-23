@@ -16,5 +16,4 @@ npm run build
 npm run start
 ```
 
-The Vercel project is configured through `vercel.json`. Production is intended
-to run at [builtby.vin](https://builtby.vin).
+Production is intended to run at [builtby.vin](https://builtby.vin).
