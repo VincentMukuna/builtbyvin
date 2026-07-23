@@ -258,9 +258,7 @@ footer a:hover {
 
 .hero-visual img {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
 }
 
 .visual-label {
@@ -439,6 +437,7 @@ footer a:hover {
 
 .project-image img {
   width: 100%;
+  height: auto;
   box-shadow: 0 24px 50px rgba(24, 24, 19, 0.17);
   transition: transform 500ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -828,10 +827,6 @@ footer {
     padding: 10px;
   }
 
-  .hero-visual img {
-    aspect-ratio: 16 / 9;
-  }
-
   .visual-caption {
     align-items: flex-start;
     flex-direction: column;
@@ -895,7 +890,11 @@ footer {
   }
 
   .project-copy h3 {
-    font-size: 46px;
+    font-size: clamp(38px, 12vw, 46px);
+  }
+
+  .project-stock .project-copy h3 {
+    font-size: clamp(30px, 9.5vw, 42px);
   }
 
   .project-lede {
@@ -903,7 +902,7 @@ footer {
   }
 
   .project-image {
-    padding: 20px;
+    padding: 12px;
   }
 
   .project-footer {
