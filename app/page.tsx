@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
 const ExternalLink = ({
@@ -77,9 +79,13 @@ export default function Home() {
             <span>01</span>
             <span>Latest build</span>
           </div>
-          <img
+          <Image
             src="/work/owwed-site.png"
             alt="Owwed product website showing the private debt tracker mobile app"
+            width={2200}
+            height={1176}
+            sizes="(max-width: 1020px) 90vw, 48vw"
+            priority
           />
           <div className="visual-caption">
             <div>
@@ -152,9 +158,12 @@ export default function Home() {
             </p>
           </div>
           <div className="project-image owwed-stage">
-            <img
+            <Image
               src="/work/owwed-site.png"
-              alt="Owwed interface presented on its dark product website"
+              alt="Owwed interface presented on its light product website"
+              width={2200}
+              height={1176}
+              sizes="(max-width: 760px) 90vw, 1080px"
             />
           </div>
           <div className="project-footer">
@@ -193,9 +202,12 @@ export default function Home() {
             </p>
           </div>
           <div className="project-image kibbe-stage">
-            <img
+            <Image
               src="/work/kibbe-search.png"
               alt="KibbeAI search results with product recommendations and an AI assistant conversation"
+              width={2200}
+              height={1367}
+              sizes="(max-width: 760px) 90vw, 1080px"
             />
           </div>
           <div className="project-footer">
@@ -230,9 +242,12 @@ export default function Home() {
             </p>
           </div>
           <div className="project-image stock-stage">
-            <img
+            <Image
               src="/work/stock-scores.png"
               alt="StockMarketGuides dashboard showing score filters and a detailed stock results table"
+              width={2200}
+              height={1491}
+              sizes="(max-width: 760px) 90vw, 1080px"
             />
           </div>
           <div className="project-footer">
