@@ -151,7 +151,7 @@ export default function Home() {
               feel simple without losing the context people need later.
             </p>
           </div>
-          <div className="project-image dark-image">
+          <div className="project-image owwed-stage">
             <img
               src="/work/owwed-site.png"
               alt="Owwed interface presented on its dark product website"
