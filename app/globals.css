@@ -109,6 +109,22 @@ footer a:hover {
   font-weight: 600;
 }
 
+.header-cta span,
+.text-link span,
+.project-link span,
+.trust-link span,
+.contact-secondary span {
+  transition: transform 180ms ease;
+}
+
+.header-cta:hover span,
+.text-link:hover span,
+.project-link:hover span,
+.trust-link:hover span,
+.contact-secondary:hover span {
+  transform: translate(2px, -2px);
+}
+
 .hero {
   padding-block: 86px 96px;
   display: grid;

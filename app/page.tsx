@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+const Arrow = () => <span aria-hidden="true">↗</span>;
+
 const ExternalLink = ({
   href,
   children,
@@ -35,7 +37,7 @@ export default function Home() {
           href="https://www.upwork.com/freelancers/vinmukuna"
           className="header-cta"
         >
-          Let&apos;s talk
+          Let&apos;s talk <Arrow />
         </ExternalLink>
       </header>
 
@@ -56,13 +58,13 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a className="button button-dark" href="#work">
-              See selected work
+              See selected work <span aria-hidden="true">↓</span>
             </a>
             <ExternalLink
               className="text-link"
               href="https://www.linkedin.com/in/vinmukuna/"
             >
-              Connect on LinkedIn
+              Connect on LinkedIn <Arrow />
             </ExternalLink>
           </div>
           <div className="hero-proof" aria-label="Experience summary">
@@ -91,7 +93,7 @@ export default function Home() {
               <span>Product design &amp; mobile development</span>
             </div>
             <ExternalLink href="https://owwed.builtby.vin">
-              Live product
+              Live product <Arrow />
             </ExternalLink>
           </div>
         </div>
@@ -120,7 +122,7 @@ export default function Home() {
             href="https://www.upwork.com/freelancers/vinmukuna"
             className="trust-link"
           >
-            View profile
+            View profile <Arrow />
           </ExternalLink>
         </div>
       </section>
@@ -174,7 +176,7 @@ export default function Home() {
               href="https://owwed.builtby.vin"
               className="project-link"
             >
-              Explore Owwed
+              Explore Owwed <Arrow />
             </ExternalLink>
           </div>
         </article>
@@ -258,7 +260,7 @@ export default function Home() {
               href="https://stockmarketguides.com"
               className="project-link"
             >
-              Visit product
+              Visit product <Arrow />
             </ExternalLink>
           </div>
         </article>
@@ -388,13 +390,13 @@ export default function Home() {
               className="button button-light"
               href="https://www.upwork.com/freelancers/vinmukuna"
             >
-              Start a conversation
+              Start a conversation <Arrow />
             </ExternalLink>
             <ExternalLink
               className="contact-secondary"
               href="https://www.linkedin.com/in/vinmukuna/"
             >
-              LinkedIn
+              LinkedIn <Arrow />
             </ExternalLink>
           </div>
         </div>
@@ -417,7 +419,7 @@ export default function Home() {
               GitHub
             </ExternalLink>
             <ExternalLink href="https://x.com/DevMukuna">X</ExternalLink>
-            <a href="#top">Back to top</a>
+            <a href="#top">Back to top ↑</a>
           </div>
         </div>
       </footer>
