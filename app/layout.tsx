@@ -44,7 +44,7 @@ export async function generateMetadata(): Promise<Metadata> {
           url: `${siteUrl}/og.png`,
           width: 1200,
           height: 630,
-          alt: "Built by Vin — web, mobile, and AI products built with care.",
+          alt: "Built by Vin: web, mobile, and AI products built with care.",
         },
       ],
     },

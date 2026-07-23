@@ -123,7 +123,7 @@ export default function Home() {
 
       <section className="work-section shell" id="work">
         <div className="section-heading">
-          <p className="section-label">Selected work / 2024—2026</p>
+          <p className="section-label">Selected work / 2024 to 2026</p>
           <h2>Products and features built around real user workflows.</h2>
           <p>
             Three projects that show how I move between new product ideas,
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <p className="project-story">
               I took Owwed from a personal frustration to a working mobile
-              product—shaping the core flows, visual language, and
+              product, shaping the core flows, visual language, and
               implementation. The hard part was making detailed debt records
               feel simple without losing the context people need later.
             </p>
@@ -308,7 +308,7 @@ export default function Home() {
               <h3>Work with what is there</h3>
               <p>
                 Start from a sketch, design, product requirement, or mature
-                codebase—and improve it without unnecessary reinvention.
+                codebase, then improve it without unnecessary reinvention.
               </p>
             </div>
           </li>
