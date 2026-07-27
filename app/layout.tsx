@@ -17,11 +17,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://builtby.vin"),
   title: "Vincent Mukuna | Web, Mobile & AI Product Developer",
   description:
-    "Selected web, mobile, SaaS and AI product work by Vincent Mukuna, a full-stack product developer based in Nairobi.",
+    "Vincent Mukuna is a full-stack product developer in Nairobi. See his work on web, mobile, SaaS, and AI products.",
   openGraph: {
-    title: "Web, mobile, and AI products built with care.",
+    title: "Web, mobile, and AI product development by Vincent Mukuna",
     description:
-      "Selected work by Vincent Mukuna, a product-minded full-stack developer based in Nairobi.",
+      "Selected work by Vincent Mukuna, a full-stack product developer in Nairobi.",
     type: "website",
     url: "https://builtby.vin",
     images: [
@@ -29,15 +29,15 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Built by Vin: web, mobile, and AI products built with care.",
+        alt: "Built by Vin, the portfolio of product developer Vincent Mukuna.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web, mobile, and AI products built with care.",
+    title: "Web, mobile, and AI product development by Vincent Mukuna",
     description:
-      "Selected work by Vincent Mukuna, a product-minded full-stack developer based in Nairobi.",
+      "Selected work by Vincent Mukuna, a full-stack product developer in Nairobi.",
     images: ["/og.png"],
   },
 };

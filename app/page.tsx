@@ -45,16 +45,16 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">
             Full-stack product developer
-            <span className="availability">Open to good work</span>
+            <span className="availability">Available for new projects</span>
           </p>
           <h1>
-            I build polished web, mobile, and{" "}
-            <span className="accent-word">AI products.</span>
+            I build web and mobile products,{" "}
+            <span className="accent-word">including AI features.</span>
           </h1>
           <p className="hero-intro">
-            I&apos;m Vincent Mukuna, a product-minded developer helping founders
-            and small teams turn ideas, designs, and existing software into
-            products that feel clear, reliable, and ready for real users.
+            I&apos;m Vincent Mukuna. I work with founders and small teams to turn
+            ideas and designs into working software. I also improve products
+            that are already in use.
           </p>
           <div className="hero-actions">
             <a className="button button-dark" href="#work">
@@ -130,11 +130,10 @@ export default function Home() {
       <section className="work-section shell" id="work">
         <div className="section-heading">
           <p className="section-label">Selected work / 2024 to 2026</p>
-          <h2>Products and features built around real user workflows.</h2>
+          <h2>A few things I&apos;ve built recently.</h2>
           <p>
-            Three projects that show how I move between new product ideas,
-            production codebases, complex interfaces, and the details that make
-            software feel finished.
+            These projects include an app I built from scratch, an AI shopping
+            experience, and a dashboard redesign inside a live SaaS product.
           </p>
         </div>
 
@@ -147,14 +146,14 @@ export default function Home() {
             <div>
               <h3>Owwed</h3>
               <p className="project-lede">
-                A private, local-first app for remembering money between people.
+                A private app for keeping track of money owed between people.
               </p>
             </div>
             <p className="project-story">
-              I took Owwed from a personal frustration to a working mobile
-              product, shaping the core flows, visual language, and
-              implementation. The hard part was making detailed debt records
-              feel simple without losing the context people need later.
+              Owwed started with my own frustration. I designed and built the
+              app, from the main flows through to the interface and code. Most
+              of the work went into keeping debt records simple while saving
+              enough detail to make sense when you return to them.
             </p>
           </div>
           <div className="project-image owwed-stage">
@@ -190,15 +189,15 @@ export default function Home() {
             <div>
               <h3>KibbeAI</h3>
               <p className="project-lede">
-                Conversational fashion discovery without the usual search-box
-                limits.
+                Fashion search that lets people describe what they want in
+                their own words.
               </p>
             </div>
             <p className="project-story">
-              I helped turn an open-ended AI interaction into a structured
-              product experience. My focus was the frontend: guiding users from
-              a natural-language request to useful, browsable results while
-              keeping the assistant present but never in the way.
+              I worked on the frontend and helped shape the product. The main
+              challenge was turning an open-ended conversation into results
+              people could scan and browse. The assistant stays available
+              without taking over the page.
             </p>
           </div>
           <div className="project-image kibbe-stage">
@@ -214,7 +213,7 @@ export default function Home() {
             <ul>
               <li>AI-guided search and product discovery</li>
               <li>Responsive results and conversation layouts</li>
-              <li>Launched as a complete customer-facing experience</li>
+              <li>Released as a customer-facing product</li>
             </ul>
             <span className="project-note">Screens from the shipped product</span>
           </div>
@@ -229,16 +228,15 @@ export default function Home() {
             <div>
               <h3>StockMarketGuides</h3>
               <p className="project-lede">
-                A clearer dashboard for research, trading ideas, and dense
-                financial data.
+                A dashboard for researching stocks and working through trading
+                ideas.
               </p>
             </div>
             <p className="project-story">
-              Working inside an established product, I redesigned and rebuilt
-              key dashboard surfaces used by real customers. The work balances
-              dense data, filtering, subscription logic, and ongoing
-              maintenance without disrupting the product people already rely
-              on.
+              I redesigned and rebuilt parts of an established dashboard used
+              by real customers. The job meant fitting dense tables, filters,
+              and subscription logic into a live product, then maintaining the
+              work without disrupting the people already using it.
             </p>
           </div>
           <div className="project-image stock-stage">
@@ -252,9 +250,9 @@ export default function Home() {
           </div>
           <div className="project-footer">
             <ul>
-              <li>Data-heavy tables, scores, and filtering</li>
-              <li>Ongoing work in a live, established codebase</li>
-              <li>Close product and engineering collaboration</li>
+              <li>Tables, scores, and filters for dense financial data</li>
+              <li>Ongoing development in a live codebase</li>
+              <li>Worked closely with product and engineering</li>
             </ul>
             <ExternalLink
               href="https://stockmarketguides.com"
@@ -270,31 +268,31 @@ export default function Home() {
         <div className="shell">
           <div className="section-heading services-heading">
             <p className="section-label">What I help with</p>
-            <h2>From a useful idea to a reliable product.</h2>
+            <h2>What I can build with you.</h2>
           </div>
           <div className="services-grid">
             <article>
               <span className="service-number">01</span>
               <h3>Web products</h3>
               <p>
-                SaaS platforms, customer portals, dashboards, admin tools, and
-                production features built around the way people actually work.
+                SaaS products, customer portals, dashboards, admin tools, and
+                new features for software that is already in use.
               </p>
             </article>
             <article>
               <span className="service-number">02</span>
               <h3>Mobile apps</h3>
               <p>
-                Thoughtful cross-platform apps, including offline workflows,
-                notifications, local-first data, and the unglamorous edge cases.
+                Cross-platform apps with offline flows, notifications, and
+                local-first data. I pay attention to the awkward edge cases too.
               </p>
             </article>
             <article>
               <span className="service-number">03</span>
               <h3>AI features</h3>
               <p>
-                Assistants, guided generation, conversational interfaces, and
-                AI capabilities that earn their place in the product.
+                Assistants, guided generation, and conversational interfaces. I
+                focus on where AI is useful to the person using the product.
               </p>
             </article>
           </div>
@@ -304,46 +302,47 @@ export default function Home() {
       <section className="process-section shell">
         <div className="process-intro">
           <p className="section-label">How I work</p>
-          <h2>Clear thinking. Steady delivery. Care at the finish.</h2>
+          <h2>I start with the problem and stay through the fiddly parts.</h2>
         </div>
         <ol className="process-list">
           <li>
             <span>01</span>
             <div>
-              <h3>Start with the workflow</h3>
+              <h3>Learn how people will use it</h3>
               <p>
-                Understand the user, the business need, and what success needs
-                to feel like before making the interface busy.
+                Before I touch the interface, I learn who it is for, what they
+                need to do, and what the business needs from it.
               </p>
             </div>
           </li>
           <li>
             <span>02</span>
             <div>
-              <h3>Work with what is there</h3>
+              <h3>Build on what is already there</h3>
               <p>
-                Start from a sketch, design, product requirement, or mature
-                codebase, then improve it without unnecessary reinvention.
+                I can start with a sketch, a finished design, a product
+                requirement, or a mature codebase. I keep what works and improve
+                what does not.
               </p>
             </div>
           </li>
           <li>
             <span>03</span>
             <div>
-              <h3>Make progress visible</h3>
+              <h3>Keep the work easy to follow</h3>
               <p>
-                Break the work into clear steps, raise risks early, and keep
-                feedback close to the work.
+                I split the work into clear steps, flag risks early, and ask for
+                feedback while changes are still easy to make.
               </p>
             </div>
           </li>
           <li>
             <span>04</span>
             <div>
-              <h3>Own the final quality</h3>
+              <h3>Finish the job properly</h3>
               <p>
-                Review the details, test the awkward paths, and take
-                responsibility for the thing that reaches users.
+                I review the details and test the awkward paths before the work
+                reaches users. If I build it, I take responsibility for it.
               </p>
             </div>
           </li>
@@ -354,12 +353,12 @@ export default function Home() {
         <div className="shell about-grid">
           <div>
             <p className="section-label">About Vincent</p>
-            <p className="about-kicker">Developer, designer-at-heart, builder.</p>
+            <p className="about-kicker">A developer with a soft spot for design.</p>
           </div>
           <div className="about-copy">
             <h2>
-              I care about how the finished thing works{" "}
-              <span>and how it feels.</span>
+              I care about how software works{" "}
+              <span>and how it feels to use.</span>
             </h2>
             <div className="about-columns">
               <p>
@@ -368,9 +367,9 @@ export default function Home() {
                 platforms, mobile apps, and AI-powered features.
               </p>
               <p>
-                My UX background keeps me close to the user workflow, the edge
-                cases, and the small decisions that decide whether a feature is
-                merely complete or genuinely dependable.
+                My background in UX makes me pay attention to the workflow and
+                the edge cases. A feature can be technically finished and still
+                be confusing or brittle. I try not to hand over work like that.
               </p>
             </div>
           </div>
@@ -379,11 +378,11 @@ export default function Home() {
 
       <section className="contact-section" id="contact">
         <div className="shell contact-inner">
-          <p className="section-label">Have something in mind?</p>
-          <h2>Let&apos;s make the useful version of it.</h2>
+          <p className="section-label">Working on something?</p>
+          <h2>Tell me where you need help.</h2>
           <p>
-            Tell me what you&apos;re building, what is stuck, or where your team
-            needs another experienced pair of hands.
+            You might have a new product to build, a feature that is stuck, or
+            an existing codebase that needs another experienced pair of hands.
           </p>
           <div className="contact-actions">
             <ExternalLink
