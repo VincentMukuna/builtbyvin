@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ContactForm } from "./contact-form";
 
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
@@ -33,12 +34,9 @@ export default function Home() {
           <a href="#services">Services</a>
           <a href="#about">About</a>
         </nav>
-        <ExternalLink
-          href="https://www.upwork.com/freelancers/vinmukuna"
-          className="header-cta"
-        >
-          Let&apos;s talk <Arrow />
-        </ExternalLink>
+        <a href="#contact" className="header-cta">
+          Start a project <span aria-hidden="true">↓</span>
+        </a>
       </header>
 
       <section className="hero shell" id="top">
@@ -60,12 +58,9 @@ export default function Home() {
             <a className="button button-dark" href="#work">
               See selected work <span aria-hidden="true">↓</span>
             </a>
-            <ExternalLink
-              className="text-link"
-              href="https://www.linkedin.com/in/vinmukuna/"
-            >
-              Connect on LinkedIn <Arrow />
-            </ExternalLink>
+            <a className="text-link" href="#contact">
+              Start a project <span aria-hidden="true">↓</span>
+            </a>
           </div>
           <div className="hero-proof" aria-label="Experience summary">
             <span>5+ years building software</span>
@@ -262,6 +257,20 @@ export default function Home() {
             </ExternalLink>
           </div>
         </article>
+
+        <aside className="work-cta">
+          <div>
+            <p className="section-label">Have a project in mind?</p>
+            <h2>Tell me what you&apos;re building.</h2>
+            <p>
+              A short brief is enough. Share what you need, where the work is
+              stuck, and when you would like to start.
+            </p>
+          </div>
+          <a className="button button-dark" href="#contact">
+            Start a project <span aria-hidden="true">↓</span>
+          </a>
+        </aside>
       </section>
 
       <section className="services-section" id="services">
@@ -378,26 +387,21 @@ export default function Home() {
 
       <section className="contact-section" id="contact">
         <div className="shell contact-inner">
-          <p className="section-label">Working on something?</p>
-          <h2>Tell me where you need help.</h2>
-          <p>
-            You might have a new product to build, a feature that is stuck, or
-            an existing codebase that needs another experienced pair of hands.
-          </p>
-          <div className="contact-actions">
-            <ExternalLink
-              className="button button-light"
-              href="https://www.upwork.com/freelancers/vinmukuna"
-            >
-              Start a conversation <Arrow />
-            </ExternalLink>
+          <div className="contact-copy">
+            <p className="section-label">Start a project</p>
+            <h2>Tell me what you&apos;re building.</h2>
+            <p>
+              Share what you are working on, where you need help, and when you
+              would like to start. I&apos;ll reply by email.
+            </p>
             <ExternalLink
               className="contact-secondary"
-              href="https://www.linkedin.com/in/vinmukuna/"
+              href="https://www.upwork.com/freelancers/vinmukuna"
             >
-              LinkedIn <Arrow />
+              Prefer Upwork? View my profile <Arrow />
             </ExternalLink>
           </div>
+          <ContactForm />
         </div>
       </section>
 
