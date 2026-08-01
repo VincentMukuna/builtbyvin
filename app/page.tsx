@@ -24,12 +24,6 @@ const ExternalLink = ({
 export default function Home() {
   return (
     <main>
-      <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Built by Vin, home">
-          Built by Vin<span className="wordmark-dot">.</span>
-        </a>
-      </header>
-
       <section className="hero shell" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Vincent Mukuna</p>
@@ -51,7 +45,7 @@ export default function Home() {
 
       <section className="about-section" id="about">
         <div className="shell about-grid">
-          <h2>About</h2>
+          <h2 className="eyebrow">About</h2>
           <p>
             I&apos;m Vincent Mukuna, a full-stack product developer based in
             Nairobi. I work with founders and product teams on web platforms,

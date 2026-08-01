@@ -56,16 +56,9 @@ a:focus-visible {
   outline-offset: 5px;
 }
 
-.shell,
-.site-header {
+.shell {
   width: min(1080px, calc(100% - 48px));
   margin-inline: auto;
-}
-
-.site-header {
-  height: 80px;
-  display: flex;
-  align-items: center;
 }
 
 .wordmark {
@@ -80,7 +73,7 @@ a:focus-visible {
 
 .hero {
   min-height: 560px;
-  padding-block: 100px 112px;
+  padding-block: 180px 112px;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   column-gap: 24px;
@@ -194,11 +187,7 @@ a:focus-visible {
 
 .about-grid h2 {
   grid-column: 1 / span 3;
-  margin: 0;
-  font-size: 17px;
-  font-weight: 600;
-  line-height: 1.35;
-  letter-spacing: -0.02em;
+  font-weight: 400;
 }
 
 .about-grid p {
@@ -395,18 +384,13 @@ footer {
 }
 
 @media (max-width: 640px) {
-  .shell,
-  .site-header {
+  .shell {
     width: min(100% - 40px, 1080px);
-  }
-
-  .site-header {
-    height: 68px;
   }
 
   .hero {
     min-height: 0;
-    padding-block: 64px 72px;
+    padding-block: 132px 72px;
   }
 
   .hero h1 {
