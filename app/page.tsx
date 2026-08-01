@@ -31,105 +31,35 @@ export default function Home() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#work">Work</a>
-          <a href="#services">Services</a>
           <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </nav>
         <a href="#contact" className="header-cta">
-          Start a project <span aria-hidden="true">↓</span>
+          Get in touch <span aria-hidden="true">↓</span>
         </a>
       </header>
 
       <section className="hero shell" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">
-            Full-stack product developer
-            <span className="availability">Available for new projects</span>
-          </p>
-          <h1>
-            I build web and mobile products,{" "}
-            <span className="accent-word">including AI features.</span>
-          </h1>
+          <p className="eyebrow">Vincent Mukuna · Independent developer</p>
+          <h1>Full-stack developer based in Nairobi.</h1>
           <p className="hero-intro">
-            I&apos;m Vincent Mukuna. I work with founders and small teams to turn
-            ideas and designs into working software. I also improve products
-            that are already in use.
+            I design and build web and mobile software, including AI features,
+            for founders and product teams.
           </p>
-          <div className="hero-actions">
-            <a className="button button-dark" href="#work">
-              See selected work <span aria-hidden="true">↓</span>
+          <div className="hero-footer">
+            <a className="portfolio-link" href="#work">
+              View selected work <span aria-hidden="true">↓</span>
             </a>
-            <a className="text-link" href="#contact">
-              Start a project <span aria-hidden="true">↓</span>
-            </a>
+            <span className="hero-location">5+ years · Working remotely</span>
           </div>
-          <div className="hero-proof" aria-label="Experience summary">
-            <span>5+ years building software</span>
-            <span>Web · Mobile · AI</span>
-            <span>Nairobi · Working remotely</span>
-          </div>
-        </div>
-
-        <div className="hero-visual" aria-label="Preview of Vincent's work">
-          <div className="visual-label">
-            <span>01</span>
-            <span>Latest build</span>
-          </div>
-          <Image
-            src="/work/owwed-site.png"
-            alt="Owwed product website showing the private debt tracker mobile app"
-            width={2200}
-            height={1176}
-            sizes="(max-width: 1020px) 90vw, 48vw"
-            priority
-          />
-          <div className="visual-caption">
-            <div>
-              <strong>Owwed</strong>
-              <span>Product design &amp; mobile development</span>
-            </div>
-            <ExternalLink href="https://owwed.builtby.vin">
-              Live product <Arrow />
-            </ExternalLink>
-          </div>
-        </div>
-      </section>
-
-      <section className="trust-strip" aria-label="Verified Upwork proof">
-        <div className="shell trust-inner">
-          <span className="trust-source">Verified on Upwork</span>
-          <div className="trust-stat">
-            <strong>100%</strong>
-            <span>Job Success</span>
-          </div>
-          <div className="trust-stat">
-            <strong>Top Rated</strong>
-            <span>Freelancer</span>
-          </div>
-          <div className="trust-stat">
-            <strong>5.0</strong>
-            <span>Client rating</span>
-          </div>
-          <div className="trust-stat">
-            <strong>2.8K+</strong>
-            <span>Hours logged</span>
-          </div>
-          <ExternalLink
-            href="https://www.upwork.com/freelancers/vinmukuna"
-            className="trust-link"
-          >
-            View profile <Arrow />
-          </ExternalLink>
         </div>
       </section>
 
       <section className="work-section shell" id="work">
         <div className="section-heading">
-          <p className="section-label">Selected work / 2024 to 2026</p>
-          <h2>A few things I&apos;ve built recently.</h2>
-          <p>
-            These projects include an app I built from scratch, an AI shopping
-            experience, and a dashboard redesign inside a live SaaS product.
-          </p>
+          <h2>Selected work</h2>
+          <p>2024 to 2026</p>
         </div>
 
         <article className="project project-owwed">
@@ -161,11 +91,6 @@ export default function Home() {
             />
           </div>
           <div className="project-footer">
-            <ul>
-              <li>Local-first, with no account required</li>
-              <li>Partial payments, reminders, and clear history</li>
-              <li>Designed for iOS and Android</li>
-            </ul>
             <ExternalLink
               href="https://owwed.builtby.vin"
               className="project-link"
@@ -205,11 +130,6 @@ export default function Home() {
             />
           </div>
           <div className="project-footer">
-            <ul>
-              <li>AI-guided search and product discovery</li>
-              <li>Responsive results and conversation layouts</li>
-              <li>Released as a customer-facing product</li>
-            </ul>
             <span className="project-note">Screens from the shipped product</span>
           </div>
         </article>
@@ -244,11 +164,6 @@ export default function Home() {
             />
           </div>
           <div className="project-footer">
-            <ul>
-              <li>Tables, scores, and filters for dense financial data</li>
-              <li>Ongoing development in a live codebase</li>
-              <li>Worked closely with product and engineering</li>
-            </ul>
             <ExternalLink
               href="https://stockmarketguides.com"
               className="project-link"
@@ -257,118 +172,15 @@ export default function Home() {
             </ExternalLink>
           </div>
         </article>
-
-        <aside className="work-cta">
-          <div>
-            <p className="section-label">Have a project in mind?</p>
-            <h2>Tell me what you&apos;re building.</h2>
-            <p>
-              A short brief is enough. Share what you need, where the work is
-              stuck, and when you would like to start.
-            </p>
-          </div>
-          <a className="button button-dark" href="#contact">
-            Start a project <span aria-hidden="true">↓</span>
-          </a>
-        </aside>
-      </section>
-
-      <section className="services-section" id="services">
-        <div className="shell">
-          <div className="section-heading services-heading">
-            <p className="section-label">What I help with</p>
-            <h2>What I can build with you.</h2>
-          </div>
-          <div className="services-grid">
-            <article>
-              <span className="service-number">01</span>
-              <h3>Web products</h3>
-              <p>
-                SaaS products, customer portals, dashboards, admin tools, and
-                new features for software that is already in use.
-              </p>
-            </article>
-            <article>
-              <span className="service-number">02</span>
-              <h3>Mobile apps</h3>
-              <p>
-                Cross-platform apps with offline flows, notifications, and
-                local-first data. I pay attention to the awkward edge cases too.
-              </p>
-            </article>
-            <article>
-              <span className="service-number">03</span>
-              <h3>AI features</h3>
-              <p>
-                Assistants, guided generation, and conversational interfaces. I
-                focus on where AI is useful to the person using the product.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section className="process-section shell">
-        <div className="process-intro">
-          <p className="section-label">How I work</p>
-          <h2>I start with the problem and stay through the fiddly parts.</h2>
-        </div>
-        <ol className="process-list">
-          <li>
-            <span>01</span>
-            <div>
-              <h3>Learn how people will use it</h3>
-              <p>
-                Before I touch the interface, I learn who it is for, what they
-                need to do, and what the business needs from it.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span>02</span>
-            <div>
-              <h3>Build on what is already there</h3>
-              <p>
-                I can start with a sketch, a finished design, a product
-                requirement, or a mature codebase. I keep what works and improve
-                what does not.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span>03</span>
-            <div>
-              <h3>Keep the work easy to follow</h3>
-              <p>
-                I split the work into clear steps, flag risks early, and ask for
-                feedback while changes are still easy to make.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span>04</span>
-            <div>
-              <h3>Finish the job properly</h3>
-              <p>
-                I review the details and test the awkward paths before the work
-                reaches users. If I build it, I take responsibility for it.
-              </p>
-            </div>
-          </li>
-        </ol>
       </section>
 
       <section className="about-section" id="about">
         <div className="shell about-grid">
           <div>
-            <p className="section-label">About Vincent</p>
-            <p className="about-kicker">A developer with a soft spot for design.</p>
+            <p className="section-label">About</p>
           </div>
           <div className="about-copy">
-            <h2>
-              I care about how software works{" "}
-              <span>and how it feels to use.</span>
-            </h2>
+            <h2>I care about useful, dependable software.</h2>
             <div className="about-columns">
               <p>
                 I&apos;m Vincent Mukuna, a full-stack product developer based in
@@ -388,11 +200,11 @@ export default function Home() {
       <section className="contact-section" id="contact">
         <div className="shell contact-inner">
           <div className="contact-copy">
-            <p className="section-label">Start a project</p>
-            <h2>Tell me what you&apos;re building.</h2>
+            <p className="section-label">Contact</p>
+            <h2>Let&apos;s talk.</h2>
             <p>
-              Share what you are working on, where you need help, and when you
-              would like to start. I&apos;ll reply by email.
+              Send a short note about what you&apos;re working on and where you need
+              help. I&apos;ll reply by email.
             </p>
             <ExternalLink
               className="contact-secondary"
