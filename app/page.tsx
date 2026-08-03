@@ -27,7 +27,7 @@ export default function Home() {
       <section className="hero shell" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Vincent Mukuna</p>
-          <h1>I turn product ideas into software people love to use</h1>
+          <h1>I turn product ideas into software people LOVE to use</h1>
           <p className="hero-intro">
             I&apos;m Vincent, a full-stack product developer in Nairobi. I help
             founders and product teams shape, build, and improve web, mobile,
