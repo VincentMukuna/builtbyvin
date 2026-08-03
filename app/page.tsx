@@ -27,17 +27,18 @@ export default function Home() {
       <section className="hero shell" id="top">
         <div className="hero-copy">
           <p className="eyebrow">Vincent Mukuna</p>
-          <h1>Full-stack developer based in Nairobi.</h1>
+          <h1>I turn product ideas into software people love to use</h1>
           <p className="hero-intro">
-            I design and build web and mobile software, including AI features,
-            for founders and product teams.
+            I&apos;m Vincent, a full-stack product developer in Nairobi. I help
+            founders and product teams shape, build, and improve web, mobile,
+            and AI-powered products.
           </p>
           <div className="hero-footer">
             <ExternalLink
               className="portfolio-link"
               href="https://www.upwork.com/freelancers/vinmukuna"
             >
-              Work with me <Arrow />
+              Hire me on Upwork <Arrow />
             </ExternalLink>
           </div>
         </div>
@@ -47,14 +48,15 @@ export default function Home() {
         <div className="shell about-grid">
           <h2 className="eyebrow">About</h2>
           <p>
-            I&apos;m Vincent Mukuna, a full-stack product developer based in
-            Nairobi. I work with founders and product teams on web platforms,
-            mobile apps, and AI-powered features.
+            I came into development through UX, so I tend to notice the space
+            between &apos;the feature works&apos; and &apos;the product makes
+            sense.&apos; That perspective shapes how I build.
           </p>
           <p>
-            My background in UX makes me pay attention to the workflow and the
-            edge cases. A feature can be technically finished and still be
-            confusing or brittle. I try not to hand over work like that.
+            I like working through unclear flows, overlooked edge cases, and
+            the decisions that make software feel dependable. The goal is not
+            just to finish the ticket. It is to leave behind a product that is
+            easier to use and easier to keep building.
           </p>
         </div>
       </section>
@@ -72,13 +74,14 @@ export default function Home() {
             </div>
             <h3>Owwed</h3>
             <p className="project-lede">
-              A private app for keeping track of money owed between people.
+              A private place to remember money owed between people.
             </p>
             <p className="project-story">
-              Owwed started with my own frustration. I designed and built the
-              app, from the main flows through to the interface and code. Most
-              of the work went into keeping debt records simple while saving
-              enough detail to make sense when you return to them.
+              Owwed started with my own frustration: recording a debt was easy,
+              but remembering the context later was not. I designed and built
+              the product end to end, from the core flows to the interface and
+              code. The challenge was keeping each record simple without losing
+              the details that make it useful when you return to it.
             </p>
             <div className="project-footer">
               <ExternalLink
@@ -107,14 +110,15 @@ export default function Home() {
             </div>
             <h3>KibbeAI</h3>
             <p className="project-lede">
-              Fashion search that lets people describe what they want in their
-              own words.
+              Fashion search that understands how people naturally describe
+              what they want.
             </p>
             <p className="project-story">
-              I worked on the frontend and helped shape the product. The main
-              challenge was turning an open-ended conversation into results
-              people could scan and browse. The assistant stays available
-              without taking over the page.
+              I built the frontend and helped shape how the product behaves.
+              The difficult part was turning an open-ended conversation into
+              results people could quickly scan, compare, and browse. The
+              assistant stays close when it is useful without taking over the
+              shopping experience.
             </p>
             <div className="project-footer">
               <span className="project-note">Screens from the shipped product</span>
@@ -138,21 +142,22 @@ export default function Home() {
             </div>
             <h3>StockMarketGuides</h3>
             <p className="project-lede">
-              A dashboard for researching stocks and working through trading
-              ideas.
+              A production dashboard for researching stocks and working through
+              trading ideas.
             </p>
             <p className="project-story">
-              I redesigned and rebuilt parts of an established dashboard used
-              by real customers. The job meant fitting dense tables, filters,
-              and subscription logic into a live product, then maintaining the
-              work without disrupting the people already using it.
+              I redesigned and rebuilt parts of a live SaaS product already
+              used by real customers. The work involved fitting dense tables,
+              filters, and subscription logic into a clearer experience, then
+              maintaining those improvements without disrupting the people who
+              relied on the product.
             </p>
             <div className="project-footer">
               <ExternalLink
                 href="https://stockmarketguides.com"
                 className="project-link"
               >
-                Visit product <Arrow />
+                Visit StockMarketGuides <Arrow />
               </ExternalLink>
             </div>
           </div>
@@ -184,7 +189,7 @@ export default function Home() {
             <ExternalLink href="https://github.com/VincentMukuna">
               GitHub
             </ExternalLink>
-            <ExternalLink href="https://x.com/DevMukuna">X</ExternalLink>
+            <ExternalLink href="https://x.com/vin_mukuna">X</ExternalLink>
             <a href="#top">Back to top ↑</a>
           </div>
         </div>
