@@ -67,10 +67,63 @@ export default function Home() {
           <p>2024 to 2026</p>
         </div>
 
+        <article className="project project-betterflow">
+          <div className="project-details">
+            <div className="project-meta">
+              <span>01 / Business platform</span>
+            </div>
+            <h3>BetterFlow</h3>
+            <p className="project-lede">
+              One connected workflow for service businesses, from first booking
+              to final payment.
+            </p>
+            <p className="project-story">
+              I built BetterFlow end to end: product direction, UX, the public
+              booking experience, business dashboard, mobile apps, backend, and
+              payment flows. It brings scheduling, customer history, visual
+              estimates, invoices, notifications, and Stripe payments into one
+              operating system for owners who are also doing the work.
+            </p>
+            <div className="project-footer">
+              <ExternalLink
+                href="https://trybetterflow.app"
+                className="project-link"
+              >
+                Explore BetterFlow <Arrow />
+              </ExternalLink>
+            </div>
+          </div>
+          <div className="project-image betterflow-stage">
+            <div className="betterflow-collage">
+              <Image
+                src="/work/betterflow-dashboard.png"
+                alt="BetterFlow mobile dashboard with revenue, invoices, estimates, and upcoming appointments"
+                width={1284}
+                height={2778}
+                sizes="(max-width: 640px) 30vw, 16vw"
+              />
+              <Image
+                src="/work/betterflow-revenue.png"
+                alt="BetterFlow revenue and payment activity screen"
+                width={1284}
+                height={2778}
+                sizes="(max-width: 640px) 30vw, 16vw"
+              />
+              <Image
+                src="/work/betterflow-schedule.png"
+                alt="BetterFlow day schedule with customer appointments"
+                width={1284}
+                height={2778}
+                sizes="(max-width: 640px) 30vw, 16vw"
+              />
+            </div>
+          </div>
+        </article>
+
         <article className="project project-owwed">
           <div className="project-details">
             <div className="project-meta">
-              <span>01 / Mobile product</span>
+              <span>02 / Mobile product</span>
             </div>
             <h3>Owwed</h3>
             <p className="project-lede">
@@ -106,7 +159,7 @@ export default function Home() {
         <article className="project project-kibbe">
           <div className="project-details">
             <div className="project-meta">
-              <span>02 / AI product</span>
+              <span>03 / AI product</span>
             </div>
             <h3>KibbeAI</h3>
             <p className="project-lede">
@@ -138,7 +191,7 @@ export default function Home() {
         <article className="project project-stock">
           <div className="project-details">
             <div className="project-meta">
-              <span>03 / Production SaaS</span>
+              <span>04 / Production SaaS</span>
             </div>
             <h3>StockMarketGuides</h3>
             <p className="project-lede">
@@ -173,6 +226,48 @@ export default function Home() {
         </article>
       </section>
 
+      <section className="tech-section" aria-labelledby="tech-stack-title">
+        <div className="shell tech-inner">
+          <div className="tech-intro">
+            <h2 id="tech-stack-title">Tech stack</h2>
+            <p>
+              The tools I reach for to design, build, and ship products across
+              web, mobile, payments, and AI.
+            </p>
+          </div>
+          <div className="tech-grid">
+            <article>
+              <span>01 / Web</span>
+              <ul>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Next.js</li>
+              </ul>
+            </article>
+            <article>
+              <span>02 / Mobile</span>
+              <ul>
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>iOS &amp; Android</li>
+              </ul>
+            </article>
+            <article>
+              <span>03 / Platform</span>
+              <ul>
+                <li>Node.js &amp; APIs</li>
+                <li>Stripe payments</li>
+                <li>
+                  <a className="tech-link" href="/ai-development">
+                    AI development <Arrow />
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <footer>
         <div className="shell footer-inner">
           <a className="wordmark footer-wordmark" href="#top">
@@ -190,6 +285,7 @@ export default function Home() {
               GitHub
             </ExternalLink>
             <ExternalLink href="https://x.com/vin_mukuna">X</ExternalLink>
+            <a href="/resume">Resume</a>
             <a href="#top">Back to top ↑</a>
           </div>
         </div>

@@ -267,6 +267,28 @@ a:focus-visible {
   object-position: top;
 }
 
+.betterflow-stage {
+  padding: 18px;
+  background: #dfe9e5;
+}
+
+.betterflow-collage {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  overflow: hidden;
+}
+
+.betterflow-collage img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(21, 22, 21, 0.12);
+  background: #fff;
+  object-fit: contain;
+  object-position: center;
+}
+
 .project-meta {
   margin-bottom: 26px;
   color: var(--muted);
@@ -310,6 +332,96 @@ a:focus-visible {
 
 .project-note {
   color: var(--muted);
+}
+
+.tech-section {
+  border-top: 1px solid var(--line);
+  background: var(--band);
+}
+
+.tech-inner {
+  padding-block: 72px 88px;
+}
+
+.tech-intro {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+  align-items: start;
+}
+
+.tech-intro h2 {
+  grid-column: 1 / span 4;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.tech-intro p {
+  grid-column: 7 / span 6;
+  max-width: 430px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.tech-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.tech-grid article {
+  min-height: 190px;
+  padding: 24px;
+  border-right: 1px solid var(--line);
+}
+
+.tech-grid article:first-child {
+  padding-left: 0;
+}
+
+.tech-grid article:last-child {
+  border-right: 0;
+}
+
+.tech-grid article > span {
+  color: var(--muted);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 9px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.tech-grid ul {
+  margin: 42px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  list-style: none;
+}
+
+.tech-grid li {
+  font-size: 15px;
+  letter-spacing: -0.02em;
+}
+
+.tech-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid currentColor;
+  transition: color 160ms ease;
+}
+
+.tech-link:hover {
+  color: var(--accent);
 }
 
 footer {
@@ -457,6 +569,48 @@ footer {
 
   .project-image {
     padding: 8px;
+  }
+
+  .betterflow-stage {
+    padding: 12px;
+  }
+
+  .betterflow-collage {
+    gap: 7px;
+  }
+
+  .tech-inner {
+    padding-block: 56px 64px;
+  }
+
+  .tech-intro {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .tech-intro h2,
+  .tech-intro p {
+    grid-column: 1;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-grid article,
+  .tech-grid article:first-child {
+    min-height: 0;
+    padding: 24px 0 28px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .tech-grid article:last-child {
+    border-bottom: 0;
+  }
+
+  .tech-grid ul {
+    margin-top: 24px;
   }
 
   .footer-inner {
