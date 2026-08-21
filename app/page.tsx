@@ -78,12 +78,11 @@ export default function Home() {
               to final payment.
             </p>
             <p className="project-story">
-              I was BetterFlow&apos;s main developer for a period, collaborating
-              with the team across product direction, UX, the public booking
-              experience, business dashboard, mobile apps, backend, and payment
-              flows. It brings scheduling, customer history, visual estimates,
-              invoices, notifications, and Stripe payments into one operating
-              system for owners who are also doing the work.
+              BetterFlow brings scheduling, customer history, visual estimates,
+              invoices, notifications, and Stripe payments into one connected
+              workflow. My work spanned the web, mobile, and backend experiences,
+              with a focus on making the day-to-day easier for owners who are
+              also doing the work.
             </p>
             <div className="project-footer">
               <ExternalLink
