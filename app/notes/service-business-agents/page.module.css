@@ -600,6 +600,21 @@
   }
 }
 
+.constructionPage {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #111214;
+  color: #f2f2ef;
+  font-size: clamp(20px, 3vw, 30px);
+  text-align: center;
+}
+
+.constructionPage p {
+  margin: 0;
+}
+
 @media (max-width: 760px) {
   .noteHeader,
   .hero,

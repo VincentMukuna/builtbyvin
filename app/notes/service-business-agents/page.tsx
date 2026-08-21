@@ -3,10 +3,31 @@ import Link from "next/link";
 import { ExpandableScreenshot } from "./expandable-screenshot";
 import styles from "./page.module.css";
 
+const isProduction = process.env.NODE_ENV === "production";
+
 export const metadata: Metadata = {
-  title: "Exploring agents for service businesses | Built by Vin",
-  description:
-    "A private product note exploring what a carefully controlled agent could do for a small service business.",
+  title: isProduction
+    ? "Still under construction | Built by Vin"
+    : "Exploring agents for service businesses | Built by Vin",
+  description: isProduction
+    ? "Still under construction."
+    : "A private product note exploring what a carefully controlled agent could do for a small service business.",
+  openGraph: isProduction
+    ? {
+        title: "Still under construction",
+        description: "Still under construction.",
+        url: "/notes/service-business-agents",
+        images: [],
+      }
+    : undefined,
+  twitter: isProduction
+    ? {
+        card: "summary",
+        title: "Still under construction",
+        description: "Still under construction.",
+        images: [],
+      }
+    : undefined,
   alternates: {
     canonical: "/notes/service-business-agents",
   },
@@ -21,6 +42,14 @@ export const metadata: Metadata = {
 };
 
 export default function ServiceBusinessAgentsNote() {
+  if (isProduction) {
+    return (
+      <main className={styles.constructionPage}>
+        <p>Still under construction</p>
+      </main>
+    );
+  }
+
   return (
     <main className={styles.page} id="top">
       <header className={styles.noteHeader}>
