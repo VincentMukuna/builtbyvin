@@ -78,11 +78,12 @@ export default function Home() {
               to final payment.
             </p>
             <p className="project-story">
-              I built BetterFlow end to end: product direction, UX, the public
-              booking experience, business dashboard, mobile apps, backend, and
-              payment flows. It brings scheduling, customer history, visual
-              estimates, invoices, notifications, and Stripe payments into one
-              operating system for owners who are also doing the work.
+              I was BetterFlow&apos;s main developer for a period, collaborating
+              with the team across product direction, UX, the public booking
+              experience, business dashboard, mobile apps, backend, and payment
+              flows. It brings scheduling, customer history, visual estimates,
+              invoices, notifications, and Stripe payments into one operating
+              system for owners who are also doing the work.
             </p>
             <div className="project-footer">
               <ExternalLink
@@ -167,11 +168,10 @@ export default function Home() {
               what they want.
             </p>
             <p className="project-story">
-              I built the frontend and helped shape how the product behaves.
-              The difficult part was turning an open-ended conversation into
-              results people could quickly scan, compare, and browse. The
-              assistant stays close when it is useful without taking over the
-              shopping experience.
+              KibbeAI turns open-ended fashion conversations into results people
+              can quickly scan, compare, and explore. I focused on the frontend
+              experience, keeping the assistant close enough to help without
+              letting it take over the shopping journey.
             </p>
             <div className="project-footer">
               <span className="project-note">Screens from the shipped product</span>
@@ -199,11 +199,10 @@ export default function Home() {
               trading ideas.
             </p>
             <p className="project-story">
-              I redesigned and rebuilt parts of a live SaaS product already
-              used by real customers. The work involved fitting dense tables,
-              filters, and subscription logic into a clearer experience, then
-              maintaining those improvements without disrupting the people who
-              relied on the product.
+              StockMarketGuides brings dense research tools into a product
+              people can use with confidence. I focused on the frontend,
+              building and maintaining tables, filters, and subscription flows
+              for a live SaaS product with existing customers.
             </p>
             <div className="project-footer">
               <ExternalLink
