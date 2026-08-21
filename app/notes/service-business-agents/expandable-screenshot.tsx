@@ -8,12 +8,16 @@ type ExpandableScreenshotProps = {
   src: string;
   alt: string;
   caption: string;
+  width?: number;
+  height?: number;
 };
 
 export function ExpandableScreenshot({
   src,
   alt,
   caption,
+  width = 1280,
+  height = 720,
 }: ExpandableScreenshotProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
 
@@ -38,8 +42,8 @@ export function ExpandableScreenshot({
             className={styles.screenshotImage}
             src={src}
             alt={alt}
-            width={1280}
-            height={720}
+            width={width}
+            height={height}
             sizes="(max-width: 760px) calc(100vw - 40px), 900px"
           />
           <span className={styles.screenshotHint} aria-hidden="true">
@@ -70,8 +74,8 @@ export function ExpandableScreenshot({
           className={styles.lightboxImage}
           src={src}
           alt={alt}
-          width={1280}
-          height={720}
+          width={width}
+          height={height}
           sizes="96vw"
         />
       </dialog>

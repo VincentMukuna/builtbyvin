@@ -4,7 +4,7 @@ import { ExpandableScreenshot } from "./expandable-screenshot";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
-  title: "While the owner is working, who runs the business? | Built by Vin",
+  title: "Exploring agents for service businesses | Built by Vin",
   description:
     "A private product note exploring what a carefully controlled agent could do for a small service business.",
   alternates: {
@@ -35,25 +35,35 @@ export default function ServiceBusinessAgentsNote() {
 
       <article>
         <section className={styles.hero} aria-labelledby="note-title">
-          <h1 id="note-title">
-            While the owner is working, who runs the business?
-          </h1>
-          <p className={styles.subtitle}>
-            A small exploration into agents for service businesses.
-          </p>
+          <h1 id="note-title">Exploring agents for service businesses</h1>
           <p className={styles.byline}>Vincent Mukuna · August 21, 2026</p>
         </section>
 
         <section className={`${styles.section} ${styles.letter}`}>
           <p>
             Hi Irv! Hope you’re doing well. I’ve been messing around with a
-            small agent setup for service businesses.
-          </p>
-          <p>
-            By agent, I mean an LLM-powered system that can follow a
-            conversation, use the business’s tools, and take a few steps on its
-            own. Here, it collects booking details, checks the schedule, and
-            gets the request ready for the owner.
+            small agent
+            <span className={styles.agentInfo}>
+              <button
+                className={styles.agentInfoButton}
+                type="button"
+                aria-label="What I mean by agent"
+                aria-describedby="agent-clarification"
+              >
+                <span aria-hidden="true">i</span>
+              </button>
+              <span
+                className={styles.agentTooltip}
+                id="agent-clarification"
+                role="tooltip"
+              >
+                By agent, I mean an LLM-powered system that can follow a
+                conversation, use the business’s tools, and take a few steps on
+                its own. Here, it collects booking details, checks the schedule,
+                and gets the request ready for the owner.
+              </span>
+            </span>{" "}
+            setup for service businesses.
           </p>
           <p>
             It started with a normal booking message. Someone asks about a
@@ -61,9 +71,11 @@ export default function ServiceBusinessAgentsNote() {
             customer’s side, it feels like a normal conversation.
           </p>
           <ExpandableScreenshot
-            src="/notes/service-business-agents/oak-customer-entry.png"
-            alt="Oak and Pine customer chat with a reschedule request"
+            src="/notes/service-business-agents/oak-home-chat.png"
+            alt="Oak and Pine home page with customer chat options open"
             caption="A customer starts with a normal booking request."
+            width={1280}
+            height={800}
           />
           <p>
             I wanted to think through both sides of the request: what the
@@ -106,10 +118,27 @@ export default function ServiceBusinessAgentsNote() {
             caption="The owner can see the conversation, the agent’s actions, and the outcome."
           />
           <p>
-            As I worked through it, I started thinking about the smaller things
-            around a booking. Customers ask more questions, send extra details,
-            change their plans, and follow up later. All of that needs to go
-            somewhere.
+            Say the customer comes back later and asks for a different day. The
+            agent needs to find the booking, check the new time, and show the
+            owner what changed.
+          </p>
+          <p>
+            It sounds like a small change, but the administrative parts can add
+            up. One{" "}
+            <a
+              className={styles.researchLink}
+              href="https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/guides/svc-mobile-worker-research-worksheet-for-success.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              study
+            </a>{" "}
+            found that changing an appointment took 15 minutes on average.
+          </p>
+          <p>
+            The customer might return a few days later and ask what is happening
+            with the booking. The agent needs to know which job they mean and
+            where things were left.
           </p>
           <p>
             I can see the same idea being useful in other parts of a service
