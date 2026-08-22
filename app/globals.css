@@ -256,6 +256,8 @@ button:focus-visible {
   padding: 22px 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   border-right: 1px solid var(--line);
   color: var(--muted);
   font-size: 9px;
@@ -263,12 +265,7 @@ button:focus-visible {
   letter-spacing: 0.06em;
 }
 
-.credibility-grid li:first-child {
-  padding-left: 0;
-}
-
 .credibility-grid li:last-child {
-  padding-right: 0;
   border-right: 0;
 }
 
@@ -874,12 +871,7 @@ footer {
   }
 
   .credibility-grid li:nth-child(2n) {
-    padding-right: 0;
     border-right: 0;
-  }
-
-  .credibility-grid li:nth-child(2n + 1) {
-    padding-left: 0;
   }
 
   .credibility-grid li:nth-child(n + 3) {
