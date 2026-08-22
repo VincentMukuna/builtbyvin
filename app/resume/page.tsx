@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { credibilityStats, UPWORK_URL } from "../../lib/portfolio-data";
 import styles from "./resume.module.css";
 
 export const metadata: Metadata = {
@@ -60,7 +61,7 @@ export default function ResumePage() {
               </div>
               <div>
                 <dt>Experience</dt>
-                <dd>5+ years</dd>
+                <dd>{credibilityStats[0].value}</dd>
               </div>
             </dl>
           </div>
@@ -78,25 +79,24 @@ export default function ResumePage() {
                 <div className={styles.itemHeading}>
                   <div>
                     <h3>BetterFlow</h3>
-                    <p>End-to-end product design &amp; development</p>
+                    <p>Full-stack product developer</p>
                   </div>
                   <span>Flagship product</span>
                 </div>
                 <ul>
                   <li>
-                    Built the product end to end across product direction, UX,
-                    public booking, business dashboard, mobile apps, backend,
-                    and release delivery.
+                    Built much of the product alongside its founder across
+                    public booking, the business dashboard, mobile apps,
+                    backend workflows, and payments.
                   </li>
                   <li>
-                    Connected scheduling, customer records, estimates,
-                    invoices, notifications, and payments into one workflow for
-                    service businesses.
+                    Took on broader responsibility as the product grew and
+                    helped onboard another developer into the codebase.
                   </li>
                   <li>
-                    Implemented Stripe-powered online payments and payment
-                    requests alongside customer-facing booking and invoice
-                    experiences.
+                    Helped take the product through launch, including
+                    Stripe-powered payments and release work across web and
+                    mobile.
                   </li>
                 </ul>
               </article>
@@ -105,22 +105,23 @@ export default function ResumePage() {
                 <div className={styles.itemHeading}>
                   <div>
                     <h3>StockMarketGuides</h3>
-                    <p>Full-stack product development</p>
+                    <p>Frontend Engineer</p>
                   </div>
                   <span>Ongoing engagement</span>
                 </div>
                 <ul>
                   <li>
-                    Redesigned and rebuilt parts of a production SaaS dashboard
-                    used for stock research and trading workflows.
+                    Redesigned and rebuilt key parts of a production SaaS
+                    dashboard used for stock research and trading workflows.
                   </li>
                   <li>
-                    Delivered dense data tables, filters, score displays, and
-                    subscription-aware product flows inside a mature codebase.
+                    Worked on dense data tables, filters, detail views,
+                    onboarding, and subscription-related flows inside a mature
+                    codebase.
                   </li>
                   <li>
-                    Continue to maintain and extend the product without
-                    disrupting existing customers.
+                    The redesigned dashboard received positive user feedback,
+                    and I continue to maintain and extend the product.
                   </li>
                 </ul>
               </article>
@@ -135,12 +136,12 @@ export default function ResumePage() {
                 </div>
                 <ul>
                   <li>
-                    Built responsive product discovery experiences around
-                    natural-language fashion search.
+                    Built and refined the core frontend product experience
+                    across its discovery flows.
                   </li>
                   <li>
-                    Shaped an interface where AI guidance stays available
-                    without getting in the way of browsing results.
+                    Helped take the product through launch and put it in the
+                    hands of its first users.
                   </li>
                 </ul>
               </article>
@@ -155,7 +156,7 @@ export default function ResumePage() {
               <article className={styles.projectItem}>
                 <div>
                   <h3>BetterFlow</h3>
-                  <p>Product owner, designer &amp; full-stack developer</p>
+                  <p>Full-stack product developer</p>
                 </div>
                 <p>
                   A connected operating platform for service businesses,
@@ -173,9 +174,9 @@ export default function ResumePage() {
                   <p>Creator, product designer &amp; mobile developer</p>
                 </div>
                 <p>
-                  Designed and built a local-first iOS and Android app for
-                  tracking money owed between people, including partial
-                  payments, reminders, and clear history.
+                  Designed, built, tested, and released a local-first debt
+                  tracker on the Apple App Store, with partial repayments,
+                  reminders, promised dates, and clear history.
                 </p>
                 <a href="https://owwed.builtby.vin" target="_blank" rel="noreferrer">
                   View product <Arrow />
@@ -212,25 +213,15 @@ export default function ResumePage() {
             <section className={`${styles.sidebarSection} ${styles.proofCard}`}>
               <p className={styles.sidebarLabel}>Upwork record</p>
               <div className={styles.proofGrid}>
-                <div>
-                  <strong>100%</strong>
-                  <span>Job Success</span>
-                </div>
-                <div>
-                  <strong>Top Rated</strong>
-                  <span>Freelancer</span>
-                </div>
-                <div>
-                  <strong>5.0</strong>
-                  <span>Client rating</span>
-                </div>
-                <div>
-                  <strong>2.8K+</strong>
-                  <span>Hours logged</span>
-                </div>
+                {credibilityStats.map((stat) => (
+                  <div key={stat.homepageLabel}>
+                    <strong>{stat.value}</strong>
+                    <span>{stat.label}</span>
+                  </div>
+                ))}
               </div>
               <a
-                href="https://www.upwork.com/freelancers/vinmukuna"
+                href={UPWORK_URL}
                 target="_blank"
                 rel="noreferrer"
               >

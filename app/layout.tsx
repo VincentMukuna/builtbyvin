@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://builtby.vin"),
-  title: "Vincent Mukuna | Web, Mobile & AI Product Developer",
+  title: "Vincent Mukuna | Full-Stack Developer for Web, Mobile & AI",
   description:
-    "Vincent Mukuna is a full-stack product developer in Nairobi. See his work on web, mobile, SaaS, and AI products.",
+    "Full-stack developer in Nairobi helping founders and product teams launch web and mobile products, improve live software, and build practical AI workflows.",
   openGraph: {
-    title: "Web, mobile, and AI product development by Vincent Mukuna",
+    title: "Vincent Mukuna | Full-Stack Developer for Web, Mobile & AI",
     description:
-      "Selected work by Vincent Mukuna, a full-stack product developer in Nairobi.",
+      "Full-stack developer in Nairobi helping founders and product teams launch web and mobile products, improve live software, and build practical AI workflows.",
     type: "website",
     url: "https://builtby.vin",
     images: [
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web, mobile, and AI product development by Vincent Mukuna",
+    title: "Vincent Mukuna | Full-Stack Developer for Web, Mobile & AI",
     description:
-      "Selected work by Vincent Mukuna, a full-stack product developer in Nairobi.",
+      "Full-stack developer in Nairobi helping founders and product teams launch web and mobile products, improve live software, and build practical AI workflows.",
     images: ["/og.png"],
   },
 };
