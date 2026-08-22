@@ -8,6 +8,28 @@ export const metadata: Metadata = {
   description:
     "Resume of Vincent Mukuna, a full-stack software engineer building web, mobile, SaaS, and practical AI products.",
   alternates: { canonical: "/resume" },
+  openGraph: {
+    title: "Full-Stack Software Engineer Resume | Vincent Mukuna",
+    description:
+      "Resume of Vincent Mukuna, a full-stack software engineer building web, mobile, SaaS, and practical AI products.",
+    type: "website",
+    url: "/resume",
+    images: [
+      {
+        url: "/og-resume.png",
+        width: 1200,
+        height: 630,
+        alt: "Vincent Mukuna, full-stack software engineer resume.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Full-Stack Software Engineer Resume | Vincent Mukuna",
+    description:
+      "Resume of Vincent Mukuna, a full-stack software engineer building web, mobile, SaaS, and practical AI products.",
+    images: ["/og-resume.png"],
+  },
 };
 
 const Arrow = () => <span aria-hidden="true">↗</span>;

@@ -9,6 +9,28 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/ai-development",
   },
+  openGraph: {
+    title: "A Note on Working With AI | Vincent Mukuna",
+    description:
+      "A short note from Vincent Mukuna on learning to work with AI and spending more time on the hard parts of building software.",
+    type: "article",
+    url: "/ai-development",
+    images: [
+      {
+        url: "/og-ai-development.png",
+        width: 1200,
+        height: 630,
+        alt: "Working with AI, a short note by Vincent Mukuna.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "A Note on Working With AI | Vincent Mukuna",
+    description:
+      "A short note from Vincent Mukuna on learning to work with AI and spending more time on the hard parts of building software.",
+    images: ["/og-ai-development.png"],
+  },
 };
 
 export default function AiDevelopmentPage() {
