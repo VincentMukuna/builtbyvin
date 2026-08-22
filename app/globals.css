@@ -7,6 +7,19 @@
   --line: #2f3035;
   --accent: #8ea0ff;
   --focus: #a9b5ff;
+  --body-copy: #c1c2c5;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --page: #f5f4f0;
+  --band: #ecebe6;
+  --ink: #17181a;
+  --muted: #65676c;
+  --line: #d2d1cc;
+  --accent: #4058e8;
+  --focus: #4058e8;
+  --body-copy: #45474c;
 }
 
 * {
@@ -45,6 +58,48 @@ a:focus-visible {
   border-radius: 2px;
   outline: 2px solid var(--focus);
   outline-offset: 5px;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 4px;
+}
+
+.theme-toggle {
+  position: fixed;
+  right: calc(18px + env(safe-area-inset-right));
+  bottom: calc(18px + env(safe-area-inset-bottom));
+  z-index: 50;
+  min-width: 78px;
+  min-height: 44px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--page) 88%, transparent);
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--ink) 12%, transparent);
+  color: var(--ink);
+  cursor: pointer;
+  font: 600 10px/1 var(--font-geist-mono), monospace;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.theme-toggle:hover {
+  border-color: var(--muted);
+}
+
+.theme-toggle-icon {
+  width: 14px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .shell {

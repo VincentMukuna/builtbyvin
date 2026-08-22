@@ -589,15 +589,13 @@
   color: var(--note-accent);
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --note-paper: #111214;
-    --note-ink: #f1f1ef;
-    --note-muted: #a4a5aa;
-    --note-line: #2f3035;
-    --note-soft: #17181b;
-    --note-accent: #8ea0ff;
-  }
+:global(html[data-theme="dark"]) .page {
+  --note-paper: #111214;
+  --note-ink: #f1f1ef;
+  --note-muted: #a4a5aa;
+  --note-line: #2f3035;
+  --note-soft: #17181b;
+  --note-accent: #8ea0ff;
 }
 
 .constructionPage {
@@ -605,8 +603,8 @@
   display: grid;
   place-items: center;
   padding: 24px;
-  background: #111214;
-  color: #f2f2ef;
+  background: var(--page);
+  color: var(--ink);
   font-size: clamp(20px, 3vw, 30px);
   text-align: center;
 }
