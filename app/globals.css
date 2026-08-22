@@ -365,45 +365,148 @@ a:focus-visible {
 }
 
 .oak-stage {
-  padding: 12px;
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 43fr) minmax(0, 57fr);
-  gap: 10px;
-  background: #d9ddd8;
+  grid-template-rows: 52px minmax(0, 1fr);
+  padding: 0;
+  border-color: #3b423e;
+  background: #dfe4dd;
 }
 
-.oak-screen {
-  min-width: 0;
-  display: grid;
-  grid-template-rows: 30px 1fr;
-  overflow: hidden;
-  border: 1px solid rgba(21, 22, 21, 0.12);
-  background: #f7f6f2;
+.oak-viewer-bar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 10px 8px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: #173d33;
+  color: #eef3ec;
 }
 
-.oak-screen span {
-  padding: 8px 10px;
-  border-bottom: 1px solid rgba(21, 22, 21, 0.12);
-  color: #484b47;
+.oak-viewer-bar > p {
+  margin: 0;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
-  letter-spacing: 0.06em;
+  font-size: 7px;
+  letter-spacing: 0.09em;
   line-height: 1;
   text-transform: uppercase;
 }
 
-.oak-screen img {
+.oak-view-switch {
+  display: flex;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(7, 24, 19, 0.35);
+}
+
+.oak-view-switch button {
+  min-height: 26px;
+  padding: 0 11px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.62);
+  cursor: pointer;
+  font: inherit;
+  font-size: 8px;
+  font-weight: 650;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.oak-view-switch button[aria-selected="true"] {
+  background: #d5ed83;
+  color: #173d33;
+}
+
+.oak-view-switch button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.oak-viewer-canvas {
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+  background: #f7f6f2;
+}
+
+.oak-viewer-canvas > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
+  animation: oak-view-in 220ms ease-out;
 }
 
-.oak-customer-screen img {
-  object-position: 59% top;
+.oak-viewer-note {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  width: min(230px, 48%);
+  padding: 11px 12px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(17, 24, 21, 0.9);
+  color: #fff;
+  backdrop-filter: blur(8px);
 }
 
-.oak-ops-screen img {
-  object-position: 53% top;
+.oak-viewer-note span {
+  color: #d5ed83;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 7px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.oak-viewer-note p {
+  margin: 5px 0 0;
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.oak-control-stamp {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 10px;
+  border: 1px solid rgba(23, 61, 51, 0.18);
+  border-radius: 999px;
+  background: rgba(247, 246, 242, 0.9);
+  color: #173d33;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 6px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
+.oak-control-stamp span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #6e8a30;
+  box-shadow: 0 0 0 3px rgba(110, 138, 48, 0.16);
+}
+
+@keyframes oak-view-in {
+  from {
+    opacity: 0.55;
+    transform: scale(1.01);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oak-viewer-canvas > img {
+    animation: none;
+  }
 }
 
 .additional-section {
@@ -776,18 +879,49 @@ footer {
   }
 
   .oak-stage {
-    min-height: 250px;
-    padding: 8px;
-    gap: 7px;
+    min-height: 310px;
+    grid-template-rows: auto minmax(0, 1fr);
   }
 
-  .oak-screen {
-    grid-template-rows: 27px 1fr;
+  .oak-viewer-bar {
+    min-height: 74px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 11px 12px;
   }
 
-  .oak-screen span {
-    padding: 7px;
-    font-size: 7px;
+  .oak-view-switch {
+    width: 100%;
+  }
+
+  .oak-view-switch button {
+    flex: 1;
+  }
+
+  .oak-viewer-canvas > img {
+    object-position: top center;
+  }
+
+  .oak-viewer-note {
+    left: 9px;
+    bottom: 9px;
+    width: 58%;
+    padding: 8px 9px;
+  }
+
+  .oak-viewer-note p {
+    font-size: 8px;
+  }
+
+  .oak-control-stamp {
+    right: 9px;
+    bottom: 9px;
+    width: 30%;
+    align-items: flex-start;
+    border-radius: 4px;
+    font-size: 5px;
+    line-height: 1.35;
   }
 
   .additional-section {

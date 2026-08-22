@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { credibilityStats, UPWORK_URL } from "../lib/portfolio-data";
+import { OakPineShowcase } from "./components/oak-pine-showcase";
 
 const Arrow = () => <span className="arrow-icon" aria-hidden="true" />;
 
@@ -141,28 +142,7 @@ export default function Home() {
               not enter personal or sensitive information.
             </p>
           </div>
-          <figure className="project-image oak-stage">
-            <div className="oak-screen oak-customer-screen">
-              <span>Customer website</span>
-              <Image
-                src="/notes/service-business-agents/oak-home-chat.png"
-                alt="Oak & Pine customer website with AI chat"
-                width={1280}
-                height={800}
-                sizes="(max-width: 640px) 42vw, 22vw"
-              />
-            </div>
-            <div className="oak-screen oak-ops-screen">
-              <span>Back office</span>
-              <Image
-                src="/notes/service-business-agents/bo-owner-conversation.png"
-                alt="Oak & Pine service-business back-office inbox with a conversation awaiting an operator decision"
-                width={1280}
-                height={720}
-                sizes="(max-width: 640px) 52vw, 28vw"
-              />
-            </div>
-          </figure>
+          <OakPineShowcase />
         </article>
 
         <article className="project project-owwed">
