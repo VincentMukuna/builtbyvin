@@ -90,7 +90,6 @@
 .articleHeader h1 {
   max-width: 920px;
   margin: 26px 0 28px;
-  text-wrap: balance;
   font-size: clamp(48px, 5vw, 74px);
   font-weight: 560;
   line-height: 0.98;
@@ -142,10 +141,8 @@
 }
 
 .articleBody h2 {
-  max-width: 670px;
   margin: 0 0 26px;
   color: var(--ink);
-  text-wrap: balance;
   font-size: clamp(30px, 4.2vw, 45px);
   font-weight: 560;
   line-height: 1.1;
