@@ -66,8 +66,7 @@
 .articleHeader {
   padding-block: clamp(84px, 12vw, 148px) clamp(68px, 8vw, 104px);
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: 24px;
+  grid-template-columns: 1fr minmax(0, 760px) 1fr;
   border-bottom: 1px solid var(--line);
 }
 
@@ -85,7 +84,7 @@
 .articleHeader h1,
 .standfirst,
 .byline {
-  grid-column: 2 / span 10;
+  grid-column: 2;
 }
 
 .articleHeader h1 {
