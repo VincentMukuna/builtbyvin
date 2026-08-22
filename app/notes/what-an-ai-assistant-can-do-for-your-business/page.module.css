@@ -92,7 +92,7 @@
   max-width: 920px;
   margin: 26px 0 28px;
   text-wrap: balance;
-  font-size: clamp(46px, 7vw, 86px);
+  font-size: clamp(48px, 5vw, 74px);
   font-weight: 560;
   line-height: 0.98;
   letter-spacing: -0.065em;
